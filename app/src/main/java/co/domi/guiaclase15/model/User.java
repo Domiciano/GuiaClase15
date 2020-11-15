@@ -1,17 +1,19 @@
-package co.domi.guiaclase15;
+package co.domi.guiaclase15.model;
 
 public class User {
     private String id;
     private String nombre;
     private String correo;
+    private String password;
 
     public User() {
     }
 
-    public User(String id, String nombre, String correo) {
+    public User(String id, String nombre, String correo, String password) {
         this.id = id;
         this.nombre = nombre;
         this.correo = correo;
+        this.password = password;
     }
 
     public String getId() {
@@ -36,5 +38,13 @@ public class User {
 
     public void setCorreo(String correo) {
         this.correo = correo;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }

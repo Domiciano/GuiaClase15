@@ -1,6 +1,7 @@
-package co.domi.guiaclase15;
+package co.domi.guiaclase15.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
+import co.domi.guiaclase15.R;
 
 import android.os.Bundle;
 import android.widget.Button;

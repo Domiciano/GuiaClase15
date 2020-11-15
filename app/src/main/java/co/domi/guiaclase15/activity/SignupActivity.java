@@ -1,6 +1,9 @@
-package co.domi.guiaclase15;
+package co.domi.guiaclase15.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
+import co.domi.guiaclase15.R;
+import co.domi.guiaclase15.util.TextUtil;
+import co.domi.guiaclase15.model.User;
 
 import android.content.Intent;
 import android.os.Bundle;

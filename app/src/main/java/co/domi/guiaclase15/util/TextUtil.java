@@ -1,4 +1,4 @@
-package co.domi.guiaclase15;
+package co.domi.guiaclase15.util;
 
 
 public class TextUtil {

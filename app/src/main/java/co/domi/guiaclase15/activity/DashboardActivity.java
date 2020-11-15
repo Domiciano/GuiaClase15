@@ -1,6 +1,8 @@
-package co.domi.guiaclase15;
+package co.domi.guiaclase15.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
+import co.domi.guiaclase15.R;
+import co.domi.guiaclase15.model.User;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,6 +15,8 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 public class DashboardActivity extends AppCompatActivity {
+
+    private static final int NEWREG_CALLBACK = 11;
 
     private Button signoutBtn;
     private Button newRegBtn;
@@ -38,7 +42,7 @@ public class DashboardActivity extends AppCompatActivity {
 
     private void goToNewReg(View view) {
         Intent i = new Intent(this, NewRegisterActivity.class);
-        startActivity(i);
+        startActivityForResult(i, NEWREG_CALLBACK);
     }
 
     private void resolveMyUser() {
