@@ -83,7 +83,7 @@ public class SignupActivity extends AppCompatActivity {
                 task -> {
                     if(task.isSuccessful()) {
                         String id = FirebaseAuth.getInstance().getUid();
-                        User user = new User(id, name, email);
+                        User user = new User(id, name, email, password);
                         FirebaseFirestore.getInstance().collection("clase15users").document(id).set(user).addOnCompleteListener(
                                 dbtask -> {
                                     Intent i = new Intent(this, DashboardActivity.class);
